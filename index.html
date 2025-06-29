@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Prabhat C A | Portfolio</title>
+  <meta name="description" content="Sai Prabhat C A's professional portfolio. ECE undergrad passionate about tech, innovation, and embedded systems.">
+  <meta name="keywords" content="Sai Prabhat, ECE, Portfolio, Web Developer, IoT, Embedded Systems, Student">
+  <meta name="author" content="Sai Prabhat C A">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Sai Prabhat C A</div>
+    <button class="nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="profile" data-aos="fade-down">
+        <img src="profile.jpg" alt="Sai Prabhat" class="profile-img">
+        <div>
+          <h1 id="typed-text"></h1>
+          <p>ECE Undergrad | Tech Enthusiast</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I'm a B.Tech student in Electronics and Communication Engineering studying in Jain University with a passion for innovation, exploring the tech world. With interests spanning web development, IoT, and embedded systems.</p>
+    </section>
+
+    <section class="section" id="achievements" data-aos="fade-up">
+      <h2>Achievements</h2>
+      <ul>
+        <li>🎯 Participation in the TECHATHON</li>
+        <li>🛡️ Participation in "Cybersecurity Awareness"</li>
+      </ul>
+      <a href="https://www.linkedin.com/posts/sai-prabhat-ca-9a873a322_electronics-ece-activity-7256911601788665857-qdTe" target="_blank" class="btn-view">🔗 View TECHATHON</a>
+      <a href="https://www.linkedin.com/posts/sai-prabhat-ca-9a873a322_jainuniversity-nss-activity-7258038103192350720-qTNw" target="_blank" class="btn-view">🔗 View Cybersecurity Awareness</a>
+    </section>
+
+    <section class="section" id="education" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>B.Tech ECE – Jain University</h3>
+          <span>2024 – 2028</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Sri Chaitanya Techno School</h3>
+          <span>Grades 1 to 12 (2011 – 2024)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>C-language</span>
+        <span>HTML, CSS</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="project-item">
+    <h3>Little Leaf | Project-1</h3>
+    <p>A mini web project demonstrating modern web design with interactivity.</p>
+    <a href="Little Leaf-project-1.zip" target="_blank" class="btn-view">🌿 Download zip file</a>
+  </div>
+  <div class="project-item">
+    <h3>Login-page | Project-1.2</h3>
+    <p>A modern look login page using only html and css(didn't use backend).</p>
+    <a href="Login-pageLL.zip" target="_blank" class="btn-view">⏬ Download zip file</a>
+  </div>
+</section>
+
+
+    <section class="section" id="certificates" data-aos="fade-up">
+  <h2>Certificates</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <a href="Sai Prabhat CA - Python Programming completion certificate.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+        <h3>Python Programming</h3>
+        <span>June 2025 (1 Month Training)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Modal -->
+      <div id="cert1" class="modal">
+        <span class="close" onclick="closeModal('cert1')">&times;</span>
+        <iframe src="Sai Prabhat CA - Python Programming completion certificate.pdf" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:saiprabhat.ca@gmail.com">saiprabhat.ca@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sai-prabhat-ca-9a873a322/" target="_blank">linkedin.com/in/sai-prabhat-ca</a></p>
+      <p><a href="#" class="btn-view disabled">📄 Download Resume (Coming Soon)</a></p>
+    </section>
+  </main>
+
+  <button onclick="scrollToTop()" class="scroll-top" title="Go to top">↑</button>
+
+  <footer>
+    <p>© <span id="year"></span> Sai Prabhat C A. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleNav() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+
+    const typedText = "Sai Prabhat C A";
+    let i = 0;
+    function type() {
+      if (i < typedText.length) {
+        document.getElementById("typed-text").textContent += typedText.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    window.onload = type;
+
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+</body>
+</html>
